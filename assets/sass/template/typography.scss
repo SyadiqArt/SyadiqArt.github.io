@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+
+@media screen and(max-width: $breakpoint-xs){
+    $base-font-size : 12px;
+}
+h1{
+    font-size: 42px;
+    font-weight: 700;
+    @media screen and(max-width: $breakpoint-xs){
+        font-size: 32px;
+    }
+}
+h2{
+    font-size: 38px;
+    font-weight: 700;
+    @media screen and(max-width: $breakpoint-xs){
+        font-size: 28px;
+    }
+}
+
+h3{
+    font-size: 32px;
+    @media screen and(max-width: $breakpoint-xs){
+        font-size: 24px;
+    }
+}
+
+h5{
+    @media screen and(max-width: $breakpoint-xs){
+        font-size: 18px;
+    }
+}
+h5{
+    line-height: 1.7em;
+    @media screen and(max-width: $breakpoint-xs){
+        font-size: 15px;
+    }
+}
+
+p{
+    font-size: $base-font-size + 2;
+    line-height: 1.8em;
+    @media screen and(max-width: $breakpoint-xs){
+        font-size: $base-font-size;
+    }
+}
+
+.text{
+    &--sm{
+        font-size: $base-font-size;
+    }
+    &--lg{
+        font-size: 60px;
+    }
+}
+
+.bold{
+    font-weight: 700;
+}
+.medium{
+    font-weight: 500;
+}
+
+.title{
+    margin-bottom: 40px;
+    @media screen and(max-width: $breakpoint-xs){
+        margin-bottom: 20px;
+    }
+    &--xs{
+        margin-bottom: 20px;
+        @media screen and(max-width: $breakpoint-xs){
+            margin-bottom: 10px;
+        }
+    }
+    &--sm{
+        margin-bottom: 30px;
+        @media screen and(max-width: $breakpoint-xs){
+            margin-bottom: 15px;
+        }
+    }
+    &--md{
+        margin-bottom: 50px;
+        @media screen and(max-width: $breakpoint-xs){
+            margin-bottom: 30px;
+        }
+    }
+    &--lg{
+        margin-bottom: 60px;
+        @media screen and(max-width: $breakpoint-xs){
+            margin-bottom: 40px;
+        }
+    }
+    &--xlg{
+        margin-bottom: 80px;
+        @media screen and(max-width: $breakpoint-xs){
+            margin-bottom: 50px;
+        }
+    }
+}

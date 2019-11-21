@@ -1,0 +1,19 @@
+%fade{
+    @include transition(0.3s all ease);
+    &:hover{
+        @include transition(0.3s all ease);
+    }
+}
+
+%fit-center{
+    object-fit: cover;
+    object-position: center;
+}
+
+%sm-rounded{
+    @include border-radius(5px);
+}
+
+%md-rounded{
+    @include border-radius(10px);
+}

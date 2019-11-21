@@ -1,0 +1,25 @@
+@media (max-width: 768px){
+	.sm-none{
+		display: none;
+	}
+	.sm-show{
+		display: block;
+	}
+	#levidio-ramadhan-jv{
+		#wrapper{
+			margin-top: 0px;
+			@include border-radius(0);
+			@include box-shadow(0);
+			#sidebar{
+
+			}
+			#content{
+				height: auto;
+				#content--header{
+					border-top-right-radius: 0px;
+					margin-top: 70px;
+				}
+			}
+		}
+	}
+}

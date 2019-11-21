@@ -1,0 +1,53 @@
+@media (max-width: 995px){
+	.navbar{
+		.container{
+			padding: 0 70px;
+		}
+	}
+	.container{
+		width: 100%;
+		max-width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	section{
+	    padding: 60px 70px;
+		&.sm{
+			padding: 40px 70px;
+		}
+		&.xs{
+			padding: 10px 70px;
+		}
+	}
+	#levidio-ramadhan-fe{
+		header{
+		    padding: 150px 70px 200px;
+		}
+		#hello{
+			.hello-ornament{
+				position: absolute;
+				top: -70px;
+				left: 0;
+			}
+		}
+		#steps{
+			.step{
+				.step-img{
+					height: 160px;
+				}
+			}
+		}
+		#faq{
+			&:before{
+				display: none;
+			}
+		}
+	}
+	#levidio-ramadhan-jv{
+		#sidebar{
+			.sidebar-content{
+				padding: 30px!important;
+			}
+		}
+	}
+}

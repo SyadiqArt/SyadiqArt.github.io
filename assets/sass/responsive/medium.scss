@@ -1,0 +1,52 @@
+@media (max-width: 850px){
+	.md-none{
+		display: none;
+	}
+	.md-pull-bottom{
+		margin-bottom: 20px!important;
+	}
+	.md-pull-top{
+		margin-top: 20px!important;
+		&-lg{
+			margin-top: 40px!important;
+		}
+	}
+	.md-center{
+		text-align: center;
+	}
+
+	.navbar{
+		.container{
+			padding: 0 50px;
+		}
+	}
+	section{
+	    padding: 60px 50px;
+		&.sm{
+			padding: 40px 50px;
+		}
+		&.xs{
+			padding: 10px 50px;
+		}
+	}
+
+	#levidio-ramadhan-jv{
+		#content{
+			.content-wrapper{
+				padding: 70px 40px!important;
+				&.sm{
+					padding: 40px 40px!important;
+				}
+				&.xs{
+					padding: 30px 40px!important;
+				}
+				&.xxs{
+					padding: 20px 30px!important;
+				}
+				&.content-title{
+					padding: 20px 40px!important;
+				}
+			}
+		}
+	}
+}

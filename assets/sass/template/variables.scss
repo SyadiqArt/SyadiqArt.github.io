@@ -1,0 +1,27 @@
+$colors : (
+    'white'         : #FFFFFF,
+    'softwhite'     : #FAFAFA,
+    'medwhite'      : #EEEEEE,
+    'darkwhite'     : #CCCCCC,
+    'yellow'        : #FFD96A,
+    'green'         : #A1C45A,
+    'softorange'    : #FD8C33,
+    'orange'        : #FC5B26,
+    'red'           : #FE5F55,
+    'softblue'      : #7B94FF,
+    'blue'          : #5475FB,
+    'softpurple'    : #99acd8,
+    'purple'        : #8070b2,
+    'dusk'          : #8696A7,
+    'midnight'      : #504B6D,
+    'darkmidnight'  : #323C41,
+    'gray'          : #DFE7E9,
+    'medgray'       : #272F34,
+    'darkgray'      : #1F272E,
+    'dark'          : #171F25,
+);
+
+$base-font-size : 14px;
+$breakpoint-md : 986px;
+$breakpoint-sm : 768px;
+$breakpoint-xs : 575px;

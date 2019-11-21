@@ -1,0 +1,146 @@
+body{
+    background-color: color('softwhite');
+    color: color('dusk');
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    line-height: 1.8em;
+    letter-spacing: 0.02em;
+}
+
+nav{
+    font-weight: 700;
+    padding: 25px 0!important;
+    font-size: $base-font-size - 1;
+    background-color: color('softwhite');
+    @include transition(0.3s all ease);
+    &.navbar-fixed{
+        background-color: color('white');
+        @include box-shadow(0 20px 80px transparentize(color('dusk'),.9));
+    }
+    .navbar-brand{
+        img{
+            height: 25px;
+        }
+    }
+    &.navbar--congrats{
+        padding: 30px 0!important;
+        background: linear-gradient(to right, color('purple'), color('softpurple'));
+        @include box-shadow(0 20px 80px transparentize(color('dark'),.9));
+        img{
+            margin: 0 auto;
+            height: 25px;
+        }
+    }
+    .msgr--icon{
+        height: 15px;
+        margin-right: 5px;
+    }
+    .btn{
+        font-size: $base-font-size - 1;
+    }
+}
+
+.container{
+    width: 1100px;
+    max-width: 96%;
+}
+
+section{
+    padding: 90px 0;
+    @media screen and(max-width: $breakpoint-xs){
+        padding: 60px 0;
+    }
+    &.sm{
+        padding: 60px 0;
+        @media screen and(max-width: $breakpoint-xs){
+            padding: 40px 0;
+        }
+    }
+    &.xs{
+        padding: 40px 0;
+        @media screen and(max-width: $breakpoint-xs){
+            padding: 30px 0;
+        }
+    }
+}
+
+.boxed{
+    .container{
+        width: 1200px;
+        max-width: 96%;
+    }
+    section{
+        padding: 90px 60px;
+        @media screen and(max-width: $breakpoint-xs){
+            padding: 60px 30px;
+        }
+        &.sm{
+            padding: 60px 60px;
+            @media screen and(max-width: $breakpoint-xs){
+                padding: 40px 30px;
+            }
+        }
+        &.xs{
+            padding: 40px 60px;
+            @media screen and(max-width: $breakpoint-xs){
+                padding: 30px 30px;
+            }
+        }
+    }
+}
+
+a{
+    color: color('dusk');
+    @extend %fade;
+    &:hover, &:active{
+        cursor: pointer;
+        color: color('dusk');
+        text-decoration: none;
+    }
+    &.hover{
+        &--fade-out{
+            &:hover{
+                opacity: .5;
+            }
+        }
+        &--zoom{
+            &:hover{
+                @include scale(1.1);
+            }
+        }
+    }
+}
+
+footer{
+    background-color: color('dark');
+    padding: 20px 0;
+    font-size: $base-font-size - 1;
+    color: transparentize($color: color('darkwhite'), $amount: .5);
+    &.footer--congrats{
+        padding-top: 60px;
+        background-color: color('medgray');
+    }
+}
+
+img{
+    max-width: 100%;
+}
+.gutter {
+    &--xs{
+        &.row {
+            @media screen and(max-width: $breakpoint-xs) {
+                margin-right: -6px;
+                margin-left: -6px;
+            }
+        }
+        > {
+            [class^=col-],
+            [class^=" col-"] {
+                @media screen and(max-width: $breakpoint-xs) {
+                    padding-right: 6px;
+                    padding-left: 6px;
+                }
+            }
+        }
+    }
+}
